@@ -15,18 +15,21 @@ public class Student {
 	private String lastName;
 	private String email;
 	
+	private Certificate certi;
+	
 	public Student() {
 		super();
 		
 	}
 	
 
-	public Student(int id, String firstName, String lastName, String email) {
+	public Student(int id, String firstName, String lastName, String email, Certificate certi) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.certi = certi;
 	}
 
 	// getters and setters 
@@ -61,6 +64,18 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	
+
+	public Certificate getCerti() {
+		return certi;
+	}
+
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
+
 
 	@Override
 	public String toString() {
