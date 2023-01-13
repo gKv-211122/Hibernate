@@ -2,7 +2,6 @@ package com.hiber;
 
 import org.hibernate.cfg.Configuration;
 
-import java.io.FileInputStream;
 import java.util.Date;
 
 import org.hibernate.Session;
@@ -45,7 +44,7 @@ public class App {
 			ad.setOpen(true);
 			ad.setAddedDate(new Date());
 			ad.setX(113.535);
-			FileInputStream fis = new FileInputStream("src/main/java/bimg.jpg");
+			// FileInputStream fis = new FileInputStream("src/main/java/bimg.jpg");
 			
 //			byte [] img = new byte [fis.available()];
 //			fis.read(img);
